@@ -1,4 +1,17 @@
-<template name="home">
-<h1>Hello!</h1>
-Welcome to my Personal App!
+<template name='home'>
+<div class= 'bg-info'>
+<h1>Quiz app</h1>
+</div>
+<img src="https://i.ytimg.com/vi/rOZ0OHaPmnk/maxresdefault.jpg" width="90%"/>
+<h3>Welcome to my quiz app!</h3>
+<div>
+<h3>Kill some time with fun quizzes!</h3>
+</div>
+<div>
+{{#if currentUser}}
+<h3>Hello! to get started go to the quiz page!</h3>
+{{else}}
+<h3>you better login!</h3>
+{{/if}}
+</div>
 </template>
