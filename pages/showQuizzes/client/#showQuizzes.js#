@@ -1,6 +1,8 @@
 Template.showQuizzes.helpers({
 	quizzes:function(){
-		return Quizzes.find({})
+		const qs = Quizzes.find({});
+		console.dir(qs);
+		return qs; //
 	}
 })
 Template.showQuizzes.events({
@@ -11,7 +13,7 @@ Template.showQuizzes.events({
 		const quiz =
 		{writtenBy:name,content:content};
 		console.dir(quiz);
-		Meteor.call("showquiz",quiz);
+		Meteor.call("show.quiz",quiz);
 	}
 })
 Template.showQuizzes.events({

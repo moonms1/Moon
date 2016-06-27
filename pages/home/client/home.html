@@ -1,7 +1,15 @@
 <template name='home'>
-<div class= 'bg-info'>
+<div class={{theColor}}>
 <h1>Quiz app</h1>
 </div>
+<select class="js-color">
+<option>bg-info</option>
+<option>bg-warning</option>
+</select>
+
+color:{{theColor}}<br>
+counter: {{theCounter}}<br>
+<button class="js-pusher"> Push me</button>
 <img src="https://i.ytimg.com/vi/rOZ0OHaPmnk/maxresdefault.jpg" width="90%"/>
 <h3>Welcome to my Quiz app!</h3>
 <div>
