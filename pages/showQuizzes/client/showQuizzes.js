@@ -1,5 +1,5 @@
 Template.showQuizzes.helpers({
-	quizzes:function(){
+	Quizzes:function(){
 		return Quizzes.find({})
 	}
 })
@@ -9,7 +9,7 @@ Template.showQuizzes.events({
 		const name = $(".js-name").val();
 		const content = $(".js-content").val();
 		const quiz =
-		{writtenBy:name,content:content};
+		{writtenBy:name,content:content,question:question,answer:answer};
 		console.dir(quiz);
 		Meteor.call("showquiz",quiz);
 	}
